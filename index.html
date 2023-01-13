@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Electric Bill Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="innercontainer">
+            <!-- input unit -->
+            <div class="inputfield">
+                <h1 style="color: aliceblue;">Electricity Bill Calculator</h1>
+                <input type="text" id="inputunit" placeholder="Units of Electricity">
+                <br><button onclick="result()">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <!-- show result -->
+    <div class="showresultcontainer">
+    <div class="showresult">
+        <h1 style="text-align: center; margin: 15px 0px;">Results Here:</h1>
+        <table>
+            <tr>
+                <td>Cost</td>
+                <td id="cost" class="tditems"></td>
+            </tr>
+            <tr>
+                <td>FC Surcharges</td>
+                <td id="fc" class="tditems"></td>
+            </tr>
+            <tr>
+                <td>Bank Charges</td>
+                <td id="bc" class="tditems">15</td>
+            </tr>
+            <tr>
+                <td>AQTA</td>
+                <td id="aqta" class="tditems"></td>
+            </tr>
+            <tr>
+                <td>GST</td>
+                <td id="gst" class="tditems"></td>
+            </tr>
+            <tr>
+                <td>Total Bill</td>
+                <td id="tb" class="tditems"></td>
+            </tr>
+        </table>
+        <p id="finalresult"></p>
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+</html>

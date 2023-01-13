@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;700&family=Lato:wght@400;700&family=Oswald&family=Roboto+Condensed:wght@400;700&family=Sofia+Sans:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innercontainer{
+    background-color: blue;
+    border-radius: 10px;
+}
+.inputfield{
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.inputfield input{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.02rem;
+    margin: 20px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+}
+.inputfield :placeholder-shown{
+    font-size: 1.03rem;
+    text-align: center;
+}
+button{
+    border-radius: 3px;
+    border: none;
+    font-size: 1.04rem;
+    font-weight: bold;
+    padding: 8px;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    border: 1px solid red;
+    color: white;
+}
+.result{
+    margin-top: 20px;
+}
+table {
+    width: 400px;
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid black;
+}
+.tditems{
+    text-align: center;
+}
+table td{
+    font-weight: bold;
+    font-size: 1.03rem;
+    padding: 10px 10px;
+    border: 1px solid black;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: #e99b9b;
+  }
+.showresultcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showresult{
+    border-radius: 8px;
+    width: 560px;
+    margin: 10px 0px;
+    background-color: #f12711;
+    padding-bottom: 20px;
+}
+#finalresult{
+    text-align: center; 
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.showresult p{
+    color: #dddddd;
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
